@@ -48,6 +48,8 @@ class Button extends Component {
   }
 
   render() {
+    //this.handlePress.bind(this)
+    //onPress={() => this.handlePress(this)}
     return (
       <TouchableOpacity
         onPress={this.handlePress.bind(this)}
@@ -79,6 +81,8 @@ module.exports = class Basic extends Component {
       isOpen: false,
       selectedItem: item,
     });
+    //goto page with item
+    
   }
 
   render() {

@@ -18,13 +18,15 @@ import {
 //import MyNavigator1 from './components/MyNavigator1.js';
 //import MyNavigator2 from './components/MyNavigator2.js';
 
-import Basic from './components/Basic.js';
+//import Basic from './components/Basic.js';
+
+import MyRouter2 from './components/MyRouter2.js';
 
 export default class AwesomeProject extends Component {
 
   render() {
     return (
-      <Basic/>
+      <MyRouter2/>
     );
   }
 
