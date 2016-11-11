@@ -1,3 +1,4 @@
+
 /**
  * Sample React Native App
  * https://github.com/facebook/react-native
@@ -14,19 +15,16 @@ import {
   TouchableHighlight
 } from 'react-native';
 
-//import MyRouter from './components/MyRouter.js';
-//import MyNavigator1 from './components/MyNavigator1.js';
-//import MyNavigator2 from './components/MyNavigator2.js';
-
-//import Basic from './components/Basic.js';
-
-import MyRouter2 from './components/MyRouter2.js';
+//import Keyboard from './components/keyboard.js';
+//import MyListView from './components/list_view.js';
+import FormLogin from './components/form_login.js';
+//import MyScrollView from './components/scroll_view.js';
 
 export default class AwesomeProject extends Component {
 
   render() {
     return (
-      <MyRouter2/>
+      <FormLogin />
     );
   }
 
