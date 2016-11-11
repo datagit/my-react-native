@@ -17,8 +17,10 @@ import {
 
 //import Keyboard from './components/keyboard.js';
 //import MyListView from './components/list_view.js';
-import FormLogin from './components/form_login.js';
+//import FormLogin from './components/form_login.js';
 //import MyScrollView from './components/scroll_view.js';
+
+import FormLogin from './components/FormLogin.js';
 
 export default class AwesomeProject extends Component {
 
