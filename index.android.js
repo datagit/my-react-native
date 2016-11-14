@@ -5,6 +5,7 @@
  * @flow
  */
 
+//step1: import
 import React, { Component, PropTypes } from 'react';
 import {
   AppRegistry,
@@ -15,18 +16,19 @@ import {
   TouchableHighlight
 } from 'react-native';
 
-//import Keyboard from './components/keyboard.js';
-//import MyListView from './components/list_view.js';
-//import FormLogin from './components/form_login.js';
-//import MyScrollView from './components/scroll_view.js';
+//import HelloWorld from './components/HelloWorld.js';
+//import HelloWorld2 from './components/HelloWorld2.js';
+//import HelloButton from './components/HelloButton.js';
+//import FlexBox from './components/FlexBox.js';
+import Keyboard from './components/FlexBox2.js';
 
-import FormLogin from './components/FormLogin.js';
 
+//step2: export class component
 export default class AwesomeProject extends Component {
 
   render() {
     return (
-      <FormLogin />
+      <Keyboard />
     );
   }
 
@@ -51,4 +53,6 @@ const styles = StyleSheet.create({
   },
 });
 
+
+//step3: register component
 AppRegistry.registerComponent('AwesomeProject', () => AwesomeProject);
