@@ -6,7 +6,7 @@ import {
 
 //step2: export class component
 //step2.1 body class
-export default class HelloWorld extends Component {
+class HelloWorld extends Component {
 
     //option method
     constructor(props) {
@@ -35,3 +35,6 @@ HelloWorld.propTypes = {
 HelloWorld.defaultProps = {
   age: 20,
 }
+
+//step3: export default class
+export default HelloWorld;

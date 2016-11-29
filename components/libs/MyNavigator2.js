@@ -38,11 +38,9 @@ export default class MyNavigator1 extends Component {
     switch (route.name) {
       case 'do':
         return (<ManHinhDo clickMe={()=>{ navigator.push({name: 'vang', id: 10}); }}/>);
-        break;
         case 'vang':
           console.log(route.id);
           return (<ManHinhVang clickMe={()=> {navigator.pop({name: 'do'});}} />);
-          break;
     }
   }
   render() {

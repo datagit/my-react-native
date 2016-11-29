@@ -1,20 +1,20 @@
-//import
+//step1: import
 import React, {Component} from 'react';
 import {
   View, Text, StyleSheet
 } from 'react-native';
 
-//class component
+//step2: class component
 //st class Item-----------------------
 class Item extends Component {
   render() {
     return(
       <View style={styles.container}>
-        <View>
-            <Text style={styles.number}>{this.props.number}</Text>
+        <View style={styles.number}>
+            <Text>{this.props.number}</Text>
         </View>
-        <View>
-            <Text style={styles.letter}>{this.props.letter.toUpperCase()}</Text>
+        <View style={styles.letter}>
+            <Text>{this.props.letter.toUpperCase()}</Text>
         </View>
       </View>
     );
@@ -31,12 +31,14 @@ const styles = StyleSheet.create({
     flex: 1,
     flexDirection: 'column',
     alignItems: 'center',
+    borderColor: 'gray',
+    borderWidth: 1,
   },
   number: {
-    fontSize: 50,
+    flex: 2,
   },
   letter: {
-      fontSize: 30,
+    flex:1,
   },
 
 });
@@ -85,5 +87,5 @@ const stylesKeyboard = StyleSheet.create({
 //ed class Keyboard-----------------------
 
 
-//export class
+//step1: export default class
 export default Keyboard;

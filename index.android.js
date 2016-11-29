@@ -1,4 +1,3 @@
-
 /**
  * Sample React Native App
  * https://github.com/facebook/react-native
@@ -6,7 +5,7 @@
  */
 
 //step1: import
-import React, { Component, PropTypes } from 'react';
+import React, {Component, PropTypes} from 'react';
 import {
   AppRegistry,
   StyleSheet,
@@ -16,20 +15,21 @@ import {
   TouchableHighlight
 } from 'react-native';
 
-//import HelloWorld from './components/HelloWorld.js';
-//import HelloWorld2 from './components/HelloWorld2.js';
-//import HelloButton from './components/HelloButton.js';
-//import FlexBox from './components/FlexBox.js';
-import Keyboard from './components/FlexBox2.js';
+// import HelloWorld from './components/HelloWorld.js'; import HelloWorld2 from
+// './components/HelloWorld2.js'; import HelloButton from
+// './components/HelloButton.js'; import FlexBox from './components/FlexBox.js';
+// import Keyboard from './components/FlexBox2.js';
 
+//import Router from './components/Router.js';
+import Router2 from './components/Router2.js';
 
 //step2: export class component
 export default class AwesomeProject extends Component {
 
   render() {
-    return (
-      <Keyboard />
-    );
+    var xx = 10;
+    console.log(xx);
+    return (<Router2/>);
   }
 
 }
@@ -39,20 +39,19 @@ const styles = StyleSheet.create({
     flex: 1,
     justifyContent: 'center',
     alignItems: 'center',
-    backgroundColor: '#F5FCFF',
+    backgroundColor: '#F5FCFF'
   },
   welcome: {
     fontSize: 20,
     textAlign: 'center',
-    margin: 10,
+    margin: 10
   },
   instructions: {
     textAlign: 'center',
     color: '#333333',
-    marginBottom: 5,
-  },
+    marginBottom: 5
+  }
 });
-
 
 //step3: register component
 AppRegistry.registerComponent('AwesomeProject', () => AwesomeProject);
