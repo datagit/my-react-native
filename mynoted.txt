@@ -1,0 +1,15 @@
+//st config githud--------------------
+[core]
+	repositoryformatversion = 0
+	filemode = true
+	bare = false
+	logallrefupdates = true
+[remote "origin"]
+	url = https://datagit:123strong@github.com/datagit/my-react-native.git	
+	fetch = +refs/heads/*:refs/remotes/origin/*
+[branch "master"]
+	remote = origin
+	merge = refs/heads/master
+[user]
+	email = datagit@yahoo.com
+//ed config githud--------------------    
