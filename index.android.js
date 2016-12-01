@@ -5,15 +5,8 @@
  */
 
 //step1: import
-import React, {Component, PropTypes} from 'react';
-import {
-  AppRegistry,
-  StyleSheet,
-  Text,
-  View,
-  Navigator,
-  TouchableHighlight
-} from 'react-native';
+import React, { Component, PropTypes } from 'react';
+import { AppRegistry, StyleSheet, Text, View, Navigator, TouchableHighlight } from 'react-native';
 
 // import HelloWorld from './components/HelloWorld.js'; import HelloWorld2 from
 // './components/HelloWorld2.js'; import HelloButton from
@@ -23,7 +16,8 @@ import {
 // import DisplayAnImage from './components/DisplayAnImage.js'; import
 // MyTextInput from './components/MyTextInput.js';
 //import MyListView1 from './components/MyListView1.js';
-import MyListView2 from './components/MyListView2.js';
+//import MyListView2 from './components/MyListView2.js';
+import ModalExample from './components/ModalExample';
 
 //step2: export class component
 export default class AwesomeProject extends Component {
@@ -31,7 +25,7 @@ export default class AwesomeProject extends Component {
   render() {
     var xx = 10;
     console.log(xx);
-    return (<MyListView2/>);
+    return (<ModalExample/>);
   }
 
 }
