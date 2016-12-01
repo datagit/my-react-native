@@ -17,37 +17,36 @@ import { AppRegistry, StyleSheet, Text, View, Navigator, TouchableHighlight } fr
 // MyTextInput from './components/MyTextInput.js';
 //import MyListView1 from './components/MyListView1.js';
 //import MyListView2 from './components/MyListView2.js';
-import ModalExample from './components/ModalExample';
+//import ModalExample from './components/ModalExample';
+import FetchExample from './components/FetchExample';
 
 //step2: export class component
 export default class AwesomeProject extends Component {
 
   render() {
-    var xx = 10;
-    console.log(xx);
-    return (<ModalExample/>);
+    return (<FetchExample/>);
   }
 
 }
 
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    justifyContent: 'center',
-    alignItems: 'center',
-    backgroundColor: '#F5FCFF'
-  },
-  welcome: {
-    fontSize: 20,
-    textAlign: 'center',
-    margin: 10
-  },
-  instructions: {
-    textAlign: 'center',
-    color: '#333333',
-    marginBottom: 5
-  }
-});
+// const styles = StyleSheet.create({
+//   container: {
+//     flex: 1,
+//     justifyContent: 'center',
+//     alignItems: 'center',
+//     backgroundColor: '#F5FCFF'
+//   },
+//   welcome: {
+//     fontSize: 20,
+//     textAlign: 'center',
+//     margin: 10
+//   },
+//   instructions: {
+//     textAlign: 'center',
+//     color: '#333333',
+//     marginBottom: 5
+//   }
+// });
 
 //step3: register component
 AppRegistry.registerComponent('AwesomeProject', () => AwesomeProject);
