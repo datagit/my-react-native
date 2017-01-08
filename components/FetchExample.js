@@ -26,7 +26,6 @@ export default class FetchExample extends React.Component {
   render() {
     return (
       <View>
-        <View>
           <Text>{this.state.date}</Text>
       </View>
     );
