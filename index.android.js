@@ -8,7 +8,7 @@
 import React, { Component, PropTypes } from 'react';
 import { AppRegistry, StyleSheet, Text, View, Navigator, TouchableHighlight } from 'react-native';
 
-// import HelloWorld from './components/HelloWorld.js'; import HelloWorld2 from
+ import HelloWorld from './components/HelloWorld'; //import HelloWorld2 from
 // './components/HelloWorld2.js'; import HelloButton from
 // './components/HelloButton.js'; import FlexBox from './components/FlexBox.js';
 // import Keyboard from './components/FlexBox2.js'; import Router from
@@ -18,13 +18,13 @@ import { AppRegistry, StyleSheet, Text, View, Navigator, TouchableHighlight } fr
 //import MyListView1 from './components/MyListView1.js';
 //import MyListView2 from './components/MyListView2.js';
 //import ModalExample from './components/ModalExample';
-import FetchExample from './components/FetchExample';
+//import FetchExample from './components/FetchExample';
 
 //step2: export class component
 export default class AwesomeProject extends Component {
 
   render() {
-    return (<FetchExample/>);
+    return (<HelloWorld fullname="dao man dat"/>);
   }
 
 }

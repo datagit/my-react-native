@@ -4,7 +4,7 @@ import {
   View, Text
 } from 'react-native';
 
-//step2: export class component
+//step2: export class component >> RENDER
 //step2.1 body class
 class HelloWorld extends Component {
 
