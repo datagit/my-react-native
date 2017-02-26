@@ -34,8 +34,7 @@ class Router extends Component {
   render() {
     return(
       <Navigator initialRoute={{name: 'do'}}
-        renderScene={this._renderScene}
-        />
+        renderScene={this._renderScene} />
     );
   }
 }

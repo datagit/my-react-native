@@ -30,7 +30,7 @@ class ManHinhVang extends Component {
         backgroundColor: 'yellow'
       }}>
         <TouchableOpacity onPress={this.props.funcGoto}>
-          <Text>goto red page</Text>          
+          <Text>goto red page</Text>
         </TouchableOpacity>
       </View>
     );
@@ -44,18 +44,16 @@ class Router2 extends Component {
         return <ManHinhDo
           navigator={navigator}
           funcGoto={() => {
-          navigator.pop({name: 'vang'})          
+          navigator.pop({name: 'vang'})
         }}
         firstName={route.passProps.firstName}
-        lastName={route.passProps.lastName}
-        />;
+        lastName={route.passProps.lastName} />;
       case 'vang':
         return <ManHinhVang
           navigator={navigator}
           funcGoto={() => {
-          navigator.push({name: 'do', passProps: {firstName: 'Dao', lastName: 'Dat'}})          
-        }}        
-        />;
+          navigator.push({name: 'do', passProps: {firstName: 'Dao', lastName: 'Dat'}})
+        }}  />;
     }
   }
   render() {
